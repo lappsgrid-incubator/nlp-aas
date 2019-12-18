@@ -1,0 +1,40 @@
+{
+  "services" : [ "anc:opennlp.cloud.tokenizer_1.0.0"  ],
+  "type" : "application/json",
+  "payload" : {
+    "discriminator": "http://vocab.lappsgrid.org/ns/media/jsonld#lif",
+    "payload": {
+        "@context": "http://vocab.lappsgrid.org/context-1.0.0.jsonld",
+        "text": {
+            "@value": "Goodbye cruel world. I am leaving you today."
+        },
+        "views": [
+            {
+                "id": "v1",
+                "metadata": {
+                    "timestamp": "2019-12-11T17:41:22.200Z[UTC]",
+                    "contains": {
+                        "http://vocab.lappsgrid.org/Sentence": {
+                            "producer": "org.lappsgrid.cloud.opennlp.worker.Splitter:1.0.0-SNAPSHOT",
+                            "type": "opennlp"
+                        }
+                    }
+                },
+                "annotations": [
+                    {
+                        "id": "s1",
+                        "start": 0,
+                        "end": 20,
+                        "@type": "http://vocab.lappsgrid.org/Sentence"
+                    },
+                    {
+                        "id": "s2",
+                        "start": 21,
+                        "end": 44,
+                        "@type": "http://vocab.lappsgrid.org/Sentence"
+                    }
+                ]
+            }
+        ]
+    }
+}

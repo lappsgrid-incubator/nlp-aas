@@ -1,0 +1,5 @@
+{
+	"services":["stanford.tokenizer", "stanford.splitter", "lif2gate", "gate.tagger", "gate2lif"],
+	"type": "text/plain",
+	"payload": "Hello world."
+}

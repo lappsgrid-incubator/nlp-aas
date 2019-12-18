@@ -1,0 +1,1245 @@
+{
+  "url" : "http://vassar.lappsgrid.org",
+  "totalCount" : 95,
+  "services" : [ {
+    "id" : "anc:opennlp.cloud.lemmatizer_pipeline_1.0.0",
+    "name" : "Apache OpenNLP Cloud LemmatizerPipeline v1.0.0",
+    "url" : "http://vassar.lappsgrid.org/invoker/anc:opennlp.cloud.lemmatizer_pipeline_1.0.0",
+    "requires" : {
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ]
+    },
+    "produces" : {
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Sentence", "http://vocab.lappsgrid.org/Token", "http://vocab.lappsgrid.org/Token#pos", "http://vocab.lappsgrid.org/Token#lemma" ]
+    }
+  }, {
+    "id" : "anc:opennlp.cloud.ner_pipeline_1.0.0",
+    "name" : "Apache OpenNLP Cloud NamedEntityPipeline v1.0.0",
+    "url" : "http://vassar.lappsgrid.org/invoker/anc:opennlp.cloud.ner_pipeline_1.0.0",
+    "requires" : {
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ]
+    },
+    "produces" : {
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Sentence", "http://vocab.lappsgrid.org/Token", "http://vocab.lappsgrid.org/Token#pos", "http://vocab.lappsgrid.org/Token#lemma", "http://vocab.lappsgrid.org/NamedEntity" ]
+    }
+  }, {
+    "id" : "anc:opennlp.cloud.maxent_pipeline_1.0.0",
+    "name" : "Apache OpenNLP Cloud MaxEntPipeline v1.0.0",
+    "url" : "http://vassar.lappsgrid.org/invoker/anc:opennlp.cloud.maxent_pipeline_1.0.0",
+    "requires" : {
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ]
+    },
+    "produces" : {
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Sentence", "http://vocab.lappsgrid.org/Token", "http://vocab.lappsgrid.org/Token#pos" ]
+    }
+  }, {
+    "id" : "anc:opennlp.cloud.pipeline_1.0.0",
+    "name" : "Apache OpenNLP Cloud Pipeline v1.0.0",
+    "url" : "http://vassar.lappsgrid.org/invoker/anc:opennlp.cloud.pipeline_1.0.0",
+    "requires" : {
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ]
+    },
+    "produces" : {
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Sentence", "http://vocab.lappsgrid.org/Token", "http://vocab.lappsgrid.org/Token#pos", "http://vocab.lappsgrid.org/Token#lemma", "http://vocab.lappsgrid.org/NamedEntity" ]
+    }
+  }, {
+    "id" : "anc:opennlp.cloud.lemmatizer_1.0.0",
+    "name" : "Apache OpenNLP Cloud Lemmatizer v1.0.0",
+    "url" : "http://vassar.lappsgrid.org/invoker/anc:opennlp.cloud.lemmatizer_1.0.0",
+    "requires" : {
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token", "http://vocab.lappsgrid.org/Token#pos" ]
+    },
+    "produces" : {
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token#lemma" ]
+    }
+  }, {
+    "id" : "anc:opennlp.cloud.ner_1.0.0",
+    "name" : "Apache OpenNLP Cloud NamedEntityRecognizer v1.0.0",
+    "url" : "http://vassar.lappsgrid.org/invoker/anc:opennlp.cloud.ner_1.0.0",
+    "requires" : {
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token", "http://vocab.lappsgrid.org/Token#pos" ]
+    },
+    "produces" : {
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/NamedEntity" ]
+    }
+  }, {
+    "id" : "anc:opennlp.cloud.maxent_1.0.0",
+    "name" : "Apache OpenNLP Cloud MaxEntTagger v1.0.0",
+    "url" : "http://vassar.lappsgrid.org/invoker/anc:opennlp.cloud.maxent_1.0.0",
+    "requires" : {
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token" ]
+    },
+    "produces" : {
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token#pos" ]
+    }
+  }, {
+    "id" : "anc:opennlp.cloud.splitter_1.0.0",
+    "name" : "Apache OpenNLP Cloud Splitter v1.0.0",
+    "url" : "http://vassar.lappsgrid.org/invoker/anc:opennlp.cloud.splitter_1.0.0",
+    "requires" : {
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ]
+    },
+    "produces" : {
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Sentence" ]
+    }
+  }, {
+    "id" : "anc:opennlp.cloud.tokenizer_1.0.0",
+    "name" : "Apache OpenNLP Cloud Tokenizer v1.0.0",
+    "url" : "http://vassar.lappsgrid.org/invoker/anc:opennlp.cloud.tokenizer_1.0.0",
+    "requires" : {
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Sentence" ]
+    },
+    "produces" : {
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token" ]
+    }
+  }, {
+    "id" : "anc:stanford.cloud.tagger_1.0.0",
+    "name" : "Stanford Cloud Tagger v1.0.0",
+    "url" : "http://vassar.lappsgrid.org/invoker/anc:stanford.cloud.tagger_1.0.0",
+    "requires" : {
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/text", "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ]
+    },
+    "produces" : {
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Sentence", "http://vocab.lappsgrid.org/Token", "http://vocab.lappsgrid.org/Token#pos" ]
+    }
+  }, {
+    "id" : "anc:stanford.cloud.segmenter_1.0.0",
+    "name" : "Stanford Cloud Segmenter v1.0.0",
+    "url" : "http://vassar.lappsgrid.org/invoker/anc:stanford.cloud.segmenter_1.0.0",
+    "requires" : {
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/text", "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ]
+    },
+    "produces" : {
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token", "http://vocab.lappsgrid.org/Sentence" ]
+    }
+  }, {
+    "id" : "anc:stanford.cloud.ner_1.0.0",
+    "name" : "Stanford Cloud NamedEntityRecognizer v1.0.0",
+    "url" : "http://vassar.lappsgrid.org/invoker/anc:stanford.cloud.ner_1.0.0",
+    "requires" : {
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/text", "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ]
+    },
+    "produces" : {
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Sentence", "http://vocab.lappsgrid.org/Token", "http://vocab.lappsgrid.org/Token#pos", "http://vocab.lappsgrid.org/Token#lemma", "http://vocab.lappsgrid.org/NamedEntity" ]
+    }
+  }, {
+    "id" : "anc:stanford.cloud.lemmatizer_1.0.0",
+    "name" : "Stanford Cloud Lemmatizer v1.0.0",
+    "url" : "http://vassar.lappsgrid.org/invoker/anc:stanford.cloud.lemmatizer_1.0.0",
+    "requires" : {
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/text", "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ]
+    },
+    "produces" : {
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Sentence", "http://vocab.lappsgrid.org/Token", "http://vocab.lappsgrid.org/Token#pos", "http://vocab.lappsgrid.org/Token#lemma" ]
+    }
+  }, {
+    "id" : "anc:gate.abner_1.0.0",
+    "name" : "Abner BioMedical NER",
+    "url" : "http://vassar.lappsgrid.org/invoker/anc:gate.abner_1.0.0",
+    "requires" : {
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/xml#gate", "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ]
+    },
+    "produces" : {
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/xml#gate", "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/NamedEntity" ]
+    }
+  }, {
+    "id" : "anc:gost_1.0.0-SNAPSHOT",
+    "name" : "GO Semantic Tagger",
+    "url" : "http://vassar.lappsgrid.org/invoker/anc:gost_1.0.0-SNAPSHOT",
+    "requires" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/text", "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ]
+    },
+    "produces" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token", "http://vocab.lappsgrid.org/Token#pos", "http://vocab.lappsgrid.org/Token#lemma", "http://vocab.lappsgrid.org/Lookup", "http://vocab.lappsgrid.org/NamedEntity", "http://vocab.lappsgrid.org/SemanticTag" ]
+    }
+  }, {
+    "id" : "anc:tcf-converter_1.0.1",
+    "name" : "TCF to LIF converter",
+    "url" : "http://vassar.lappsgrid.org/invoker/anc:tcf-converter_1.0.1",
+    "requires" : {
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/xml#tcf" ]
+    },
+    "produces" : {
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ]
+    }
+  }, {
+    "id" : "anc:weblicht.morph.adorner_1.0.0",
+    "name" : "Weblicht MorphAdorner v1.0.0",
+    "url" : "http://vassar.lappsgrid.org/invoker/anc:weblicht.morph.adorner_1.0.0",
+    "requires" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/xml#tcf" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token", "http://vocab.lappsgrid.org/Sentence" ]
+    },
+    "produces" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/xml#tcf" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Morphology" ]
+    }
+  }, {
+    "id" : "anc:weblicht.lif.converter_1.0.0",
+    "name" : "Weblicht LIF Conveter v1.0.0",
+    "url" : "http://vassar.lappsgrid.org/invoker/anc:weblicht.lif.converter_1.0.0",
+    "requires" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ]
+    },
+    "produces" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/xml#tcf" ]
+    }
+  }, {
+    "id" : "anc:lingpipe.splitter_1.0.0",
+    "name" : "Lingpipe LingpipeSentenceSpliter v1.0.0",
+    "url" : "http://vassar.lappsgrid.org/invoker/anc:lingpipe.splitter_1.0.0",
+    "requires" : {
+      "language" : [ "en", "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/text", "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ]
+    },
+    "produces" : {
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Sentence" ]
+    }
+  }, {
+    "id" : "anc:lingpipe.ner_1.0.0",
+    "name" : "Lingpipe LingpipeNER v1.0.0",
+    "url" : "http://vassar.lappsgrid.org/invoker/anc:lingpipe.ner_1.0.0",
+    "requires" : {
+      "language" : [ "en", "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/text", "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ]
+    },
+    "produces" : {
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/NamedEntity" ]
+    }
+  }, {
+    "id" : "anc:lingpipe.tagger_1.0.0",
+    "name" : "Lingpipe LingpipeTagger v1.0.0",
+    "url" : "http://vassar.lappsgrid.org/invoker/anc:lingpipe.tagger_1.0.0",
+    "requires" : {
+      "language" : [ "en", "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/text", "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token" ]
+    },
+    "produces" : {
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token#pos" ]
+    }
+  }, {
+    "id" : "anc:lingpipe.tokenizer_1.0.0",
+    "name" : "Lingpipe LingpipeTokenizer v1.0.0",
+    "url" : "http://vassar.lappsgrid.org/invoker/anc:lingpipe.tokenizer_1.0.0",
+    "requires" : {
+      "language" : [ "en", "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/text", "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ]
+    },
+    "produces" : {
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token" ]
+    }
+  }, {
+    "id" : "anc:stanford.ner2_2.1.0-SNAPSHOT",
+    "name" : "Stanford SelectableNamedEntityRecognizer v2.1.0-SNAPSHOT",
+    "url" : "http://vassar.lappsgrid.org/invoker/anc:stanford.ner2_2.1.0-SNAPSHOT",
+    "requires" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token", "http://vocab.lappsgrid.org/Token#pos" ]
+    },
+    "produces" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/NamedEntity" ]
+    }
+  }, {
+    "id" : "anc:lingpipe.dictionary_ner_1.1.1-SNAPSHOT",
+    "name" : "Lingpipe LingpipeDictionaryBasedNER v1.1.1-SNAPSHOT",
+    "url" : "http://vassar.lappsgrid.org/invoker/anc:lingpipe.dictionary_ner_1.1.1-SNAPSHOT",
+    "requires" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/text", "http://vocab.lappsgrid.org/ns/media/jsonld#lif", "http://vocab.lappsgrid.org/ns/media/jsonld#lapps" ]
+    },
+    "produces" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/NamedEntity" ],
+      "tagSets" : {
+        "namedEntityCategorySet" : "http://vocab.lappsgrid.org/ns/tagset/ner#custom"
+      }
+    }
+  }, {
+    "id" : "anc:lingpipe.splitter_1.1.1-SNAPSHOT",
+    "name" : "Lingpipe LingpipeSentenceSplitter v1.1.1-SNAPSHOT",
+    "url" : "http://vassar.lappsgrid.org/invoker/anc:lingpipe.splitter_1.1.1-SNAPSHOT",
+    "requires" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/text", "http://vocab.lappsgrid.org/ns/media/jsonld#lif", "http://vocab.lappsgrid.org/ns/media/jsonld#lapps" ]
+    },
+    "produces" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Sentence" ]
+    }
+  }, {
+    "id" : "anc:lingpipe.ner_1.1.1-SNAPSHOT",
+    "name" : "Lingpipe LingpipeNER v1.1.1-SNAPSHOT",
+    "url" : "http://vassar.lappsgrid.org/invoker/anc:lingpipe.ner_1.1.1-SNAPSHOT",
+    "requires" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/text", "http://vocab.lappsgrid.org/ns/media/jsonld#lif", "http://vocab.lappsgrid.org/ns/media/jsonld#lapps" ]
+    },
+    "produces" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/NamedEntity" ],
+      "tagSets" : {
+        "namedEntityCategorySet" : "http://vocab.lappsgrid.org/ns/tagset/ner#muc6"
+      }
+    }
+  }, {
+    "id" : "anc:lingpipe.tagger_1.1.1-SNAPSHOT",
+    "name" : "Lingpipe LingpipeTagger v1.1.1-SNAPSHOT",
+    "url" : "http://vassar.lappsgrid.org/invoker/anc:lingpipe.tagger_1.1.1-SNAPSHOT",
+    "requires" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/text", "http://vocab.lappsgrid.org/ns/media/jsonld#lif", "http://vocab.lappsgrid.org/ns/media/jsonld#lapps" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token" ]
+    },
+    "produces" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token#pos" ],
+      "tagSets" : {
+        "posTagSet" : "http://vocab.lappsgrid.org/ns/tagset/pos#brown"
+      }
+    }
+  }, {
+    "id" : "anc:lingpipe.tokenizer_1.1.1-SNAPSHOT",
+    "name" : "Lingpipe LingpipeTokenizer v1.1.1-SNAPSHOT",
+    "url" : "http://vassar.lappsgrid.org/invoker/anc:lingpipe.tokenizer_1.1.1-SNAPSHOT",
+    "requires" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/text", "http://vocab.lappsgrid.org/ns/media/jsonld#lif", "http://vocab.lappsgrid.org/ns/media/jsonld#lapps" ]
+    },
+    "produces" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token" ]
+    }
+  }, {
+    "id" : "anc:stanford.splitter_2.1.0-SNAPSHOT",
+    "name" : "Stanford SentenceSplitter v2.1.0-SNAPSHOT",
+    "url" : "http://vassar.lappsgrid.org/invoker/anc:stanford.splitter_2.1.0-SNAPSHOT",
+    "requires" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/text", "http://vocab.lappsgrid.org/ns/media/jsonld#lif", "http://vocab.lappsgrid.org/ns/media/json" ]
+    },
+    "produces" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Sentence" ]
+    }
+  }, {
+    "id" : "anc:stanford.ner_2.1.0-SNAPSHOT",
+    "name" : "Stanford NamedEntityRecognizer v2.1.0-SNAPSHOT",
+    "url" : "http://vassar.lappsgrid.org/invoker/anc:stanford.ner_2.1.0-SNAPSHOT",
+    "requires" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token" ]
+    },
+    "produces" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/NamedEntity" ]
+    }
+  }, {
+    "id" : "anc:stanford.tagger_2.1.0-SNAPSHOT",
+    "name" : "Stanford Tagger v2.1.0-SNAPSHOT",
+    "url" : "http://vassar.lappsgrid.org/invoker/anc:stanford.tagger_2.1.0-SNAPSHOT",
+    "requires" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token" ]
+    },
+    "produces" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token#pos" ]
+    }
+  }, {
+    "id" : "anc:stanford.tokenizer_2.1.0-SNAPSHOT",
+    "name" : "Stanford Tokenizer v2.1.0-SNAPSHOT",
+    "url" : "http://vassar.lappsgrid.org/invoker/anc:stanford.tokenizer_2.1.0-SNAPSHOT",
+    "requires" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif", "http://vocab.lappsgrid.org/ns/media/text" ]
+    },
+    "produces" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token" ]
+    }
+  }, {
+    "id" : "anc:tcf-converter_1.0.0",
+    "name" : "TCF to LIF converter",
+    "url" : "http://vassar.lappsgrid.org/invoker/anc:tcf-converter_1.0.0",
+    "requires" : {
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/xml#tcf" ]
+    },
+    "produces" : {
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ]
+    }
+  }, {
+    "id" : "anc:weblicht.stanford.parser_1.0.0",
+    "name" : "Weblicht Stanford Parser v1.0.0",
+    "url" : "http://vassar.lappsgrid.org/invoker/anc:weblicht.stanford.parser_1.0.0",
+    "requires" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/xml#tcf" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token", "http://vocab.lappsgrid.org/Sentence" ]
+    },
+    "produces" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/xml#tcf" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token#pos", "http://vocab.lappsgrid.org/Constituent", "http://vocab.lappsgrid.org/Dependency" ]
+    }
+  }, {
+    "id" : "anc:weblicht.stanford.ner_1.0.0",
+    "name" : "Weblicht Stanford NamedEntityRecognizer v1.0.0",
+    "url" : "http://vassar.lappsgrid.org/invoker/anc:weblicht.stanford.ner_1.0.0",
+    "requires" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/xml#tcf" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token", "http://vocab.lappsgrid.org/Sentence" ]
+    },
+    "produces" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/xml#tcf" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/NamedEntity" ]
+    }
+  }, {
+    "id" : "anc:weblicht.stanford.tagger_1.0.0",
+    "name" : "Weblicht Stanford Tagger v1.0.0",
+    "url" : "http://vassar.lappsgrid.org/invoker/anc:weblicht.stanford.tagger_1.0.0",
+    "requires" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/xml#tcf" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token", "http://vocab.lappsgrid.org/Sentence" ]
+    },
+    "produces" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/xml#tcf" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token#pos" ]
+    }
+  }, {
+    "id" : "anc:weblicht.stanford.tokenizer_1.0.0",
+    "name" : "Weblicht Stanford Tokenizer v1.0.0",
+    "url" : "http://vassar.lappsgrid.org/invoker/anc:weblicht.stanford.tokenizer_1.0.0",
+    "requires" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/xml#tcf" ]
+    },
+    "produces" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/xml#tcf" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token", "http://vocab.lappsgrid.org/Sentence" ]
+    }
+  }, {
+    "id" : "anc:wrap.lif_1.0.0",
+    "name" : "WrapLif v1.0.0",
+    "url" : "http://vassar.lappsgrid.org/invoker/anc:wrap.lif_1.0.0",
+    "requires" : {
+      "format" : [ "text/plain" ]
+    },
+    "produces" : {
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ]
+    }
+  }, {
+    "id" : "anc:wrap.tcf_1.0.0",
+    "name" : "WrapTcf v1.0.0",
+    "url" : "http://vassar.lappsgrid.org/invoker/anc:wrap.tcf_1.0.0",
+    "requires" : {
+      "format" : [ "text/plain" ]
+    },
+    "produces" : {
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/xml#tcf" ]
+    }
+  }, {
+    "id" : "anc:wrap.text_1.0.0",
+    "name" : "WrapText v1.0.0",
+    "url" : "http://vassar.lappsgrid.org/invoker/anc:wrap.text_1.0.0",
+    "requires" : {
+      "format" : [ "text/plain" ]
+    },
+    "produces" : {
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/text" ]
+    }
+  }, {
+    "id" : "anc:gate.ner_2.3.0",
+    "name" : "GATE NamedEntityRecognizer v2.3.0",
+    "url" : "http://vassar.lappsgrid.org/invoker/anc:gate.ner_2.3.0",
+    "requires" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/xml#gate" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Lookup" ]
+    },
+    "produces" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/xml#gate" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/NamedEntity" ],
+      "tagSets" : {
+        "namedEntityCategorySet" : "http://vocab.lappsgrid.org/ns/tagset/ner#gate"
+      }
+    }
+  }, {
+    "id" : "anc:gate.gazetteer_2.3.0",
+    "name" : "GATE Gazetteer v2.3.0",
+    "url" : "http://vassar.lappsgrid.org/invoker/anc:gate.gazetteer_2.3.0",
+    "requires" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/xml#gate" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token" ]
+    },
+    "produces" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/xml#gate" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Lookup" ]
+    }
+  }, {
+    "id" : "anc:gate.vpchunker_2.3.0",
+    "name" : "GATE VerbPhraseChunker v2.3.0",
+    "url" : "http://vassar.lappsgrid.org/invoker/anc:gate.vpchunker_2.3.0",
+    "requires" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/xml#gate" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token", "http://vocab.lappsgrid.org/Token#pos", "http://vocab.lappsgrid.org/Sentence" ]
+    },
+    "produces" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/xml#gate" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/VerbChunk" ]
+    }
+  }, {
+    "id" : "anc:gate.ortho_2.3.0",
+    "name" : "GATE OrthoMatcher v2.3.0",
+    "url" : "http://vassar.lappsgrid.org/invoker/anc:gate.ortho_2.3.0",
+    "requires" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/xml#gate" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Person" ]
+    },
+    "produces" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/xml#gate" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/NamedEntity#matches" ]
+    }
+  }, {
+    "id" : "anc:gate.npchunker_2.3.0",
+    "name" : "GATE NounPhraseChunker v2.3.0",
+    "url" : "http://vassar.lappsgrid.org/invoker/anc:gate.npchunker_2.3.0",
+    "requires" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/xml#gate" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token", "http://vocab.lappsgrid.org/Token#pos", "http://vocab.lappsgrid.org/Sentence" ]
+    },
+    "produces" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/xml#gate" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/NounChunk" ]
+    }
+  }, {
+    "id" : "anc:gate.coref_2.3.0",
+    "name" : "GATE Coreferencer v2.3.0",
+    "url" : "http://vassar.lappsgrid.org/invoker/anc:gate.coref_2.3.0",
+    "requires" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/xml#gate" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/NamedEntity" ]
+    },
+    "produces" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/xml#gate" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/NamedEntity#matches" ]
+    }
+  }, {
+    "id" : "anc:gate.tagger_2.3.0",
+    "name" : "GATE POSTagger v2.3.0",
+    "url" : "http://vassar.lappsgrid.org/invoker/anc:gate.tagger_2.3.0",
+    "requires" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/xml#gate" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token", "http://vocab.lappsgrid.org/Sentence" ]
+    },
+    "produces" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/xml#gate" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token#pos" ],
+      "tagSets" : {
+        "posTagSet" : "http://vocab.lappsgrid.org/ns/tagset/pos#hepple"
+      }
+    }
+  }, {
+    "id" : "anc:gate.tokenizer_2.3.0",
+    "name" : "GATE Tokenizer v2.3.0",
+    "url" : "http://vassar.lappsgrid.org/invoker/anc:gate.tokenizer_2.3.0",
+    "requires" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/text", "http://vocab.lappsgrid.org/ns/media/xml", "http://vocab.lappsgrid.org/ns/media/xml#gate" ]
+    },
+    "produces" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/xml#gate" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token" ]
+    }
+  }, {
+    "id" : "anc:gate.splitter_2.3.0",
+    "name" : "GATE SentenceSplitter v2.3.0",
+    "url" : "http://vassar.lappsgrid.org/invoker/anc:gate.splitter_2.3.0",
+    "requires" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/xml#gate" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token" ]
+    },
+    "produces" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/xml#gate" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Sentence" ]
+    }
+  }, {
+    "id" : "anc:convert.json2gate_2.1.0",
+    "name" : "JsonToGate v2.1.0",
+    "url" : "http://vassar.lappsgrid.org/invoker/anc:convert.json2gate_2.1.0",
+    "requires" : {
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ]
+    },
+    "produces" : {
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/xml#gate" ]
+    }
+  }, {
+    "id" : "anc:convert.gate2json_2.1.0",
+    "name" : "GateToJson v2.1.0",
+    "url" : "http://vassar.lappsgrid.org/invoker/anc:convert.gate2json_2.1.0",
+    "requires" : {
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/xml#gate" ]
+    },
+    "produces" : {
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ]
+    }
+  }, {
+    "id" : "anc:lingpipe.dictionary_ner_1.1.0",
+    "name" : "Lingpipe LingpipeDictionaryBasedNER v1.1.0",
+    "url" : "http://vassar.lappsgrid.org/invoker/anc:lingpipe.dictionary_ner_1.1.0",
+    "requires" : {
+      "language" : [ "en", "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/text", "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ]
+    },
+    "produces" : {
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/NamedEntity" ]
+    }
+  }, {
+    "id" : "anc:lingpipe.splitter_1.1.0",
+    "name" : "Lingpipe LingpipeSentenceSplitter v1.1.0",
+    "url" : "http://vassar.lappsgrid.org/invoker/anc:lingpipe.splitter_1.1.0",
+    "requires" : {
+      "language" : [ "en", "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/text", "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ]
+    },
+    "produces" : {
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Sentence" ]
+    }
+  }, {
+    "id" : "anc:lingpipe.ner_1.1.0",
+    "name" : "Lingpipe LingpipeNER v1.1.0",
+    "url" : "http://vassar.lappsgrid.org/invoker/anc:lingpipe.ner_1.1.0",
+    "requires" : {
+      "language" : [ "en", "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/text", "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ]
+    },
+    "produces" : {
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/NamedEntity" ]
+    }
+  }, {
+    "id" : "anc:lingpipe.tagger_1.1.0",
+    "name" : "Lingpipe LingpipeTagger v1.1.0",
+    "url" : "http://vassar.lappsgrid.org/invoker/anc:lingpipe.tagger_1.1.0",
+    "requires" : {
+      "language" : [ "en", "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/text", "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token" ]
+    },
+    "produces" : {
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token#pos" ]
+    }
+  }, {
+    "id" : "anc:lingpipe.tokenizer_1.1.0",
+    "name" : "Lingpipe LingpipeTokenizer v1.1.0",
+    "url" : "http://vassar.lappsgrid.org/invoker/anc:lingpipe.tokenizer_1.1.0",
+    "requires" : {
+      "language" : [ "en", "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/text", "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ]
+    },
+    "produces" : {
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token" ]
+    }
+  }, {
+    "id" : "anc:gate.ner_2.2.0",
+    "name" : "GATE NamedEntityRecognizer v2.2.0",
+    "url" : "http://vassar.lappsgrid.org/invoker/anc:gate.ner_2.2.0",
+    "requires" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/xml#gate" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token" ]
+    },
+    "produces" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/xml#gate" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Date", "http://vocab.lappsgrid.org/Person", "http://vocab.lappsgrid.org/Location", "http://vocab.lappsgrid.org/Organization" ]
+    }
+  }, {
+    "id" : "anc:gate.gazetteer_2.2.0",
+    "name" : "GATE Gazetteer v2.2.0",
+    "url" : "http://vassar.lappsgrid.org/invoker/anc:gate.gazetteer_2.2.0",
+    "requires" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/xml#gate" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token" ]
+    },
+    "produces" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/xml#gate" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Lookup" ]
+    }
+  }, {
+    "id" : "anc:gate.vpchunker_2.2.0",
+    "name" : "GATE VerbPhraseChunker v2.2.0",
+    "url" : "http://vassar.lappsgrid.org/invoker/anc:gate.vpchunker_2.2.0",
+    "requires" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/xml#gate" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token", "http://vocab.lappsgrid.org/Token#pos" ]
+    },
+    "produces" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/xml#gate" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/VerbChunk" ]
+    }
+  }, {
+    "id" : "anc:gate.ortho_2.2.0",
+    "name" : "GATE OrthoMatcher v2.2.0",
+    "url" : "http://vassar.lappsgrid.org/invoker/anc:gate.ortho_2.2.0",
+    "requires" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/xml#gate" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Person" ]
+    },
+    "produces" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/xml#gate" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/NamedEntity#matches" ]
+    }
+  }, {
+    "id" : "anc:gate.npchunker_2.2.0",
+    "name" : "GATE NounPhraseChunker v2.2.0",
+    "url" : "http://vassar.lappsgrid.org/invoker/anc:gate.npchunker_2.2.0",
+    "requires" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/xml#gate" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token", "http://vocab.lappsgrid.org/Token#pos" ]
+    },
+    "produces" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/xml#gate" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/NounChunk" ]
+    }
+  }, {
+    "id" : "anc:gate.coref_2.2.0",
+    "name" : "GATE Coreferencer v2.2.0",
+    "url" : "http://vassar.lappsgrid.org/invoker/anc:gate.coref_2.2.0",
+    "requires" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/xml#gate" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Person" ]
+    },
+    "produces" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/xml#gate" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/NamedEntity#matches" ]
+    }
+  }, {
+    "id" : "anc:gate.tagger_2.2.0",
+    "name" : "GATE POSTagger v2.2.0",
+    "url" : "http://vassar.lappsgrid.org/invoker/anc:gate.tagger_2.2.0",
+    "requires" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/xml#gate" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token", "http://vocab.lappsgrid.org/Sentence" ]
+    },
+    "produces" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/xml#gate" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token#pos" ]
+    }
+  }, {
+    "id" : "anc:gate.tokenizer_2.2.0",
+    "name" : "GATE Tokenizer v2.2.0",
+    "url" : "http://vassar.lappsgrid.org/invoker/anc:gate.tokenizer_2.2.0",
+    "requires" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/text", "http://vocab.lappsgrid.org/ns/media/xml", "http://vocab.lappsgrid.org/ns/media/xml#gate" ]
+    },
+    "produces" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/xml#gate" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token" ]
+    }
+  }, {
+    "id" : "anc:gate.splitter_2.2.0",
+    "name" : "GATE SentenceSplitter v2.2.0",
+    "url" : "http://vassar.lappsgrid.org/invoker/anc:gate.splitter_2.2.0",
+    "requires" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/xml#gate" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token" ]
+    },
+    "produces" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/xml#gate" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Sentence" ]
+    }
+  }, {
+    "id" : "anc:gate.ner_2.1.0",
+    "name" : "GATE NamedEntityRecognizer v2.1.0",
+    "url" : "http://vassar.lappsgrid.org/invoker/anc:gate.ner_2.1.0",
+    "requires" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/xml#gate" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token" ]
+    },
+    "produces" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/xml#gate" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Date", "http://vocab.lappsgrid.org/Person", "http://vocab.lappsgrid.org/Location", "http://vocab.lappsgrid.org/Organization" ]
+    }
+  }, {
+    "id" : "anc:gate.gazetteer_2.1.0",
+    "name" : "GATE Gazetteer v2.1.0",
+    "url" : "http://vassar.lappsgrid.org/invoker/anc:gate.gazetteer_2.1.0",
+    "requires" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/xml#gate" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token" ]
+    },
+    "produces" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/xml#gate" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Lookup" ]
+    }
+  }, {
+    "id" : "anc:gate.vpchunker_2.1.0",
+    "name" : "GATE VerbPhraseChunker v2.1.0",
+    "url" : "http://vassar.lappsgrid.org/invoker/anc:gate.vpchunker_2.1.0",
+    "requires" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/xml#gate" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token", "http://vocab.lappsgrid.org/Token#pos" ]
+    },
+    "produces" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/xml#gate" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/VerbChunk" ]
+    }
+  }, {
+    "id" : "anc:gate.ortho_2.1.0",
+    "name" : "GATE OrthoMatcher v2.1.0",
+    "url" : "http://vassar.lappsgrid.org/invoker/anc:gate.ortho_2.1.0",
+    "requires" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/xml#gate" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Person" ]
+    },
+    "produces" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/xml#gate" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/NamedEntity#matches" ]
+    }
+  }, {
+    "id" : "anc:gate.npchunker_2.1.0",
+    "name" : "GATE NounPhraseChunker v2.1.0",
+    "url" : "http://vassar.lappsgrid.org/invoker/anc:gate.npchunker_2.1.0",
+    "requires" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/xml#gate" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token", "http://vocab.lappsgrid.org/Token#pos" ]
+    },
+    "produces" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/xml#gate" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/NounChunk" ]
+    }
+  }, {
+    "id" : "anc:gate.coref_2.1.0",
+    "name" : "GATE Coreferencer v2.1.0",
+    "url" : "http://vassar.lappsgrid.org/invoker/anc:gate.coref_2.1.0",
+    "requires" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/xml#gate" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Person" ]
+    },
+    "produces" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/xml#gate" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/NamedEntity#matches" ]
+    }
+  }, {
+    "id" : "anc:gate.tagger_2.1.0",
+    "name" : "GATE POSTagger v2.1.0",
+    "url" : "http://vassar.lappsgrid.org/invoker/anc:gate.tagger_2.1.0",
+    "requires" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/xml#gate" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token" ]
+    },
+    "produces" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/xml#gate" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token#pos" ]
+    }
+  }, {
+    "id" : "anc:gate.tokenizer_2.1.0",
+    "name" : "GATE Tokenizer v2.1.0",
+    "url" : "http://vassar.lappsgrid.org/invoker/anc:gate.tokenizer_2.1.0",
+    "requires" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/text", "http://vocab.lappsgrid.org/ns/media/xml", "http://vocab.lappsgrid.org/ns/media/xml#gate" ]
+    },
+    "produces" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/xml#gate" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token" ]
+    }
+  }, {
+    "id" : "anc:gate.splitter_2.1.0",
+    "name" : "GATE SentenceSplitter v2.1.0",
+    "url" : "http://vassar.lappsgrid.org/invoker/anc:gate.splitter_2.1.0",
+    "requires" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/xml#gate" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token" ]
+    },
+    "produces" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/xml#gate" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Sentence" ]
+    }
+  }, {
+    "id" : "anc:stanford.splitter_2.0.0",
+    "name" : "Stanford SentenceSplitter v2.0.0",
+    "url" : "http://vassar.lappsgrid.org/invoker/anc:stanford.splitter_2.0.0",
+    "requires" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/text", "http://vocab.lappsgrid.org/ns/media/json", "jsonld" ]
+    },
+    "produces" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Sentence", "http://vocab.lappsgrid.org/Token" ]
+    }
+  }, {
+    "id" : "anc:stanford.ner_2.0.0",
+    "name" : "Stanford NamedEntityRecognizer v2.0.0",
+    "url" : "http://vassar.lappsgrid.org/invoker/anc:stanford.ner_2.0.0",
+    "requires" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token" ]
+    },
+    "produces" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Date", "http://vocab.lappsgrid.org/Person", "http://vocab.lappsgrid.org/Location", "http://vocab.lappsgrid.org/Organization" ]
+    }
+  }, {
+    "id" : "anc:stanford.tagger_2.0.0",
+    "name" : "Stanford Tagger v2.0.0",
+    "url" : "http://vassar.lappsgrid.org/invoker/anc:stanford.tagger_2.0.0",
+    "requires" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token" ]
+    },
+    "produces" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token#pos" ]
+    }
+  }, {
+    "id" : "anc:stanford.tokenizer_2.0.0",
+    "name" : "Stanford Tokenizer v2.0.0",
+    "url" : "http://vassar.lappsgrid.org/invoker/anc:stanford.tokenizer_2.0.0",
+    "requires" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ]
+    },
+    "produces" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token" ]
+    }
+  }, {
+    "id" : "anc:gate.ner_2.0.0",
+    "name" : "GATE NamedEntityRecognizer v2.0.0",
+    "url" : "http://vassar.lappsgrid.org/invoker/anc:gate.ner_2.0.0",
+    "requires" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/xml#gate" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token" ]
+    },
+    "produces" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/xml#gate" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Date", "http://vocab.lappsgrid.org/Person", "http://vocab.lappsgrid.org/Location", "http://vocab.lappsgrid.org/Organization" ]
+    }
+  }, {
+    "id" : "anc:gate.gazetteer_2.0.0",
+    "name" : "GATE Gazetteer v2.0.0",
+    "url" : "http://vassar.lappsgrid.org/invoker/anc:gate.gazetteer_2.0.0",
+    "requires" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/xml#gate" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token" ]
+    },
+    "produces" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/xml#gate" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Lookup" ]
+    }
+  }, {
+    "id" : "anc:gate.vpchunker_2.0.0",
+    "name" : "GATE VerbPhraseChunker v2.0.0",
+    "url" : "http://vassar.lappsgrid.org/invoker/anc:gate.vpchunker_2.0.0",
+    "requires" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/xml#gate" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token", "http://vocab.lappsgrid.org/Token#pos" ]
+    },
+    "produces" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/xml#gate" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/VerbChunk" ]
+    }
+  }, {
+    "id" : "anc:gate.ortho_2.0.0",
+    "name" : "GATE OrthoMatcher v2.0.0",
+    "url" : "http://vassar.lappsgrid.org/invoker/anc:gate.ortho_2.0.0",
+    "requires" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/xml#gate" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Person" ]
+    },
+    "produces" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/xml#gate" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/NamedEntity#matches" ]
+    }
+  }, {
+    "id" : "anc:gate.npchunker_2.0.0",
+    "name" : "GATE NounPhraseChunker v2.0.0",
+    "url" : "http://vassar.lappsgrid.org/invoker/anc:gate.npchunker_2.0.0",
+    "requires" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/xml#gate" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token", "http://vocab.lappsgrid.org/Token#pos" ]
+    },
+    "produces" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/xml#gate" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/NounChunk" ]
+    }
+  }, {
+    "id" : "anc:gate.coref_2.0.0",
+    "name" : "GATE Coreferencer v2.0.0",
+    "url" : "http://vassar.lappsgrid.org/invoker/anc:gate.coref_2.0.0",
+    "requires" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/xml#gate" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Person" ]
+    },
+    "produces" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/xml#gate" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/NamedEntity#matches" ]
+    }
+  }, {
+    "id" : "anc:gate.tagger_2.0.0",
+    "name" : "GATE POSTagger v2.0.0",
+    "url" : "http://vassar.lappsgrid.org/invoker/anc:gate.tagger_2.0.0",
+    "requires" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/xml#gate" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token" ]
+    },
+    "produces" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/xml#gate" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token#pos" ]
+    }
+  }, {
+    "id" : "anc:gate.tokenizer_2.0.0",
+    "name" : "GATE Tokenizer v2.0.0",
+    "url" : "http://vassar.lappsgrid.org/invoker/anc:gate.tokenizer_2.0.0",
+    "requires" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/text", "http://vocab.lappsgrid.org/ns/media/xml", "http://vocab.lappsgrid.org/ns/media/xml#gate" ]
+    },
+    "produces" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/xml#gate" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token" ]
+    }
+  }, {
+    "id" : "anc:gate.splitter_2.0.0",
+    "name" : "GATE SentenceSplitter v2.0.0",
+    "url" : "http://vassar.lappsgrid.org/invoker/anc:gate.splitter_2.0.0",
+    "requires" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/xml#gate" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token" ]
+    },
+    "produces" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/xml#gate" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Sentence" ]
+    }
+  }, {
+    "id" : "anc:convert.json2gate_2.0.0",
+    "name" : "JsonToGate v2.0.0",
+    "url" : "http://vassar.lappsgrid.org/invoker/anc:convert.json2gate_2.0.0",
+    "requires" : {
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ]
+    },
+    "produces" : {
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/xml#gate" ]
+    }
+  }, {
+    "id" : "anc:convert.gate2json_2.0.0",
+    "name" : "GateToJson v2.0.0",
+    "url" : "http://vassar.lappsgrid.org/invoker/anc:convert.gate2json_2.0.0",
+    "requires" : {
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/xml#gate" ]
+    },
+    "produces" : {
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ]
+    }
+  } ]
+}

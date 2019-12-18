@@ -1,0 +1,15 @@
+{
+  "services" : [ "anc:opennlp.cloud.tokenizer_1.0.0"  ],
+  "type" : "application/json",
+  "payload" : {
+    "discriminator" : "http://vocab.lappsgrid.org/ns/media/jsonld#lif",
+    "payload" : {
+      "@context" : "http://vocab.lappsgrid.org/context-1.0.0.jsonld",
+      "metadata" : { },
+      "text" : {
+        "@value" : "Goodbye cruel world. I am leaving you today."
+      },
+      "views" : [ ]
+    }
+  }
+}

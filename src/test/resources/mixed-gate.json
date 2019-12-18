@@ -1,0 +1,10 @@
+{
+    "services": [
+        "stanford.tokenizer",
+        "stanford.splitter",
+        "gate.tagger",
+        "opennlp.lemmatizer"
+    ],
+    "type": "text/plain",
+    "payload": "Goodbye cruel world. I am leaving you today."
+}

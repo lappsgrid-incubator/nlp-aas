@@ -1,0 +1,8 @@
+.idea/
+target/
+change-me.log
+VERSION
+Version.java
+*.iml
+*.ipr
+*.iws

@@ -1,0 +1,6 @@
+
+services(['gate.tokenizer', 'gate.splitter', 'gate.tagger', 'gate2lif'])
+//services(['lif2gate', 'gate.tokenizer', 'gate.splitter', 'gate.tagger', 'gate2lif'])
+type 'text/plain'
+payload "Hello worlds"
+

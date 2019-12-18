@@ -1,0 +1,5 @@
+{
+  "services" : [ "anc:opennlp.cloud.splitter_1.0.0", "anc:opennlp.cloud.tokenizer_1.0.0" ],
+  "type" : "text/plain",
+  "payload" : "Goodbye cruel world I am leaving you today."
+}

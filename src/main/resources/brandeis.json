@@ -1,0 +1,1125 @@
+{
+  "url" : "http://eldrad.cs-i.brandeis.edu:8080/service_manager",
+  "totalCount" : 78,
+  "services" : [ {
+    "id" : "brandeis_eldrad_grid_1:brandeis.sentencesplitter_1.0.0-SNAPSHOT",
+    "name" : "Brandeis Sentence Splitter (v1.0.0-SNAPSHOT)",
+    "url" : "http://eldrad.cs-i.brandeis.edu:8080/service_manager/invoker/brandeis_eldrad_grid_1:brandeis.sentencesplitter_1.0.0-SNAPSHOT",
+    "requires" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token" ]
+    },
+    "produces" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Sentence" ]
+    }
+  }, {
+    "id" : "brandeis_eldrad_grid_1:reverb.relationextractor_1.0.2",
+    "name" : "ReVerb Relation Extractor (v1.0.2)",
+    "url" : "http://eldrad.cs-i.brandeis.edu:8080/service_manager/invoker/brandeis_eldrad_grid_1:reverb.relationextractor_1.0.2",
+    "requires" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/text", "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ]
+    },
+    "produces" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/GenericRelation", "http://vocab.lappsgrid.org/Markable", "http://vocab.lappsgrid.org/Token" ]
+    }
+  }, {
+    "id" : "brandeis_eldrad_grid_1:reverb.relationextractor_1.0.1",
+    "name" : "ReVerb Relation Extractor (v1.0.1)",
+    "url" : "http://eldrad.cs-i.brandeis.edu:8080/service_manager/invoker/brandeis_eldrad_grid_1:reverb.relationextractor_1.0.1",
+    "requires" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/text", "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ]
+    },
+    "produces" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/GenericRelation", "http://vocab.lappsgrid.org/Markable", "http://vocab.lappsgrid.org/Token" ]
+    }
+  }, {
+    "id" : "brandeis_eldrad_grid_1:reverb.relationextractor_1.0.0",
+    "name" : "ReVerb Relation Extractor (v1.0.0)",
+    "url" : "http://eldrad.cs-i.brandeis.edu:8080/service_manager/invoker/brandeis_eldrad_grid_1:reverb.relationextractor_1.0.0",
+    "requires" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/text", "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ]
+    },
+    "produces" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/GenericRelation", "http://vocab.lappsgrid.org/Markable", "http://vocab.lappsgrid.org/Token" ]
+    }
+  }, {
+    "id" : "brandeis_eldrad_grid_1:gate.annie.namedentityrecognizer_0.0.1",
+    "name" : "Gate Annie (v0.0.1) NamedEntityRecognizer",
+    "url" : "http://eldrad.cs-i.brandeis.edu:8080/service_manager/invoker/brandeis_eldrad_grid_1:gate.annie.namedentityrecognizer_0.0.1",
+    "requires" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/NamedEntity" ]
+    },
+    "produces" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/NamedEntity" ]
+    }
+  }, {
+    "id" : "brandeis_eldrad_grid_1:gate.annie.postagger_0.0.1",
+    "name" : "Gate Annie (v0.0.1) POSTagger",
+    "url" : "http://eldrad.cs-i.brandeis.edu:8080/service_manager/invoker/brandeis_eldrad_grid_1:gate.annie.postagger_0.0.1",
+    "requires" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token#pos" ]
+    },
+    "produces" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token#pos" ]
+    }
+  }, {
+    "id" : "brandeis_eldrad_grid_1:gate.annie.tokenizer_0.0.1",
+    "name" : "Gate Annie (v0.0.1) Tokenizer",
+    "url" : "http://eldrad.cs-i.brandeis.edu:8080/service_manager/invoker/brandeis_eldrad_grid_1:gate.annie.tokenizer_0.0.1",
+    "requires" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token" ]
+    },
+    "produces" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token" ]
+    }
+  }, {
+    "id" : "brandeis_eldrad_grid_1:gate.annie.splitter_0.0.1",
+    "name" : "Gate Annie (v0.0.1) Splitter",
+    "url" : "http://eldrad.cs-i.brandeis.edu:8080/service_manager/invoker/brandeis_eldrad_grid_1:gate.annie.splitter_0.0.1",
+    "requires" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Sentence" ]
+    },
+    "produces" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Sentence" ]
+    }
+  }, {
+    "id" : "brandeis_eldrad_grid_1:gate.opennlp.namedentityrecognizer_0.0.1",
+    "name" : "Gate OpenNLP (v0.0.1) NamedEntityRecognizer",
+    "url" : "http://eldrad.cs-i.brandeis.edu:8080/service_manager/invoker/brandeis_eldrad_grid_1:gate.opennlp.namedentityrecognizer_0.0.1",
+    "requires" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/NamedEntity" ]
+    },
+    "produces" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/NamedEntity" ]
+    }
+  }, {
+    "id" : "brandeis_eldrad_grid_1:gate.opennlp.postagger_0.0.1",
+    "name" : "Gate OpenNLP (v0.0.1) POSTagger",
+    "url" : "http://eldrad.cs-i.brandeis.edu:8080/service_manager/invoker/brandeis_eldrad_grid_1:gate.opennlp.postagger_0.0.1",
+    "requires" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token#pos" ]
+    },
+    "produces" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token#pos" ]
+    }
+  }, {
+    "id" : "brandeis_eldrad_grid_1:gate.opennlp.tokenizer_0.0.1",
+    "name" : "Gate OpenNLP (v0.0.1) Tokenizer",
+    "url" : "http://eldrad.cs-i.brandeis.edu:8080/service_manager/invoker/brandeis_eldrad_grid_1:gate.opennlp.tokenizer_0.0.1",
+    "requires" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token" ]
+    },
+    "produces" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token" ]
+    }
+  }, {
+    "id" : "brandeis_eldrad_grid_1:gate.opennlp.splitter_0.0.1",
+    "name" : "Gate OpenNLP (v0.0.1) Splitter",
+    "url" : "http://eldrad.cs-i.brandeis.edu:8080/service_manager/invoker/brandeis_eldrad_grid_1:gate.opennlp.splitter_0.0.1",
+    "requires" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Sentence" ]
+    },
+    "produces" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Sentence" ]
+    }
+  }, {
+    "id" : "brandeis_eldrad_grid_1:uima.dkpro.stanfordnlp.coref_0.0.1",
+    "name" : "DkPro UIMA Stanford NLP (v0.0.1) Coreference",
+    "url" : "http://eldrad.cs-i.brandeis.edu:8080/service_manager/invoker/brandeis_eldrad_grid_1:uima.dkpro.stanfordnlp.coref_0.0.1",
+    "requires" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Coreference" ]
+    },
+    "produces" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Coreference" ]
+    }
+  }, {
+    "id" : "brandeis_eldrad_grid_1:uima.dkpro.stanfordnlp.parser_0.0.1",
+    "name" : "DkPro UIMA Stanford NLP (v0.0.1) Parser",
+    "url" : "http://eldrad.cs-i.brandeis.edu:8080/service_manager/invoker/brandeis_eldrad_grid_1:uima.dkpro.stanfordnlp.parser_0.0.1",
+    "requires" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/PhraseStructure" ]
+    },
+    "produces" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/PhraseStructure" ]
+    }
+  }, {
+    "id" : "brandeis_eldrad_grid_1:uima.dkpro.stanfordnlp.namedentityrecognizer_0.0.1",
+    "name" : "DkPro UIMA Stanford NLP (v0.0.1) NamedEntityRecognizer",
+    "url" : "http://eldrad.cs-i.brandeis.edu:8080/service_manager/invoker/brandeis_eldrad_grid_1:uima.dkpro.stanfordnlp.namedentityrecognizer_0.0.1",
+    "requires" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/NamedEntity" ]
+    },
+    "produces" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/NamedEntity" ]
+    }
+  }, {
+    "id" : "brandeis_eldrad_grid_1:uima.dkpro.stanfordnlp.postagger_0.0.1",
+    "name" : "DkPro UIMA Stanford NLP (v0.0.1) POSTagger",
+    "url" : "http://eldrad.cs-i.brandeis.edu:8080/service_manager/invoker/brandeis_eldrad_grid_1:uima.dkpro.stanfordnlp.postagger_0.0.1",
+    "requires" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token#pos" ]
+    },
+    "produces" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token#pos" ]
+    }
+  }, {
+    "id" : "brandeis_eldrad_grid_1:uima.dkpro.stanfordnlp.tokenizer_0.0.1",
+    "name" : "DkPro UIMA Stanford NLP (v0.0.1) Tokenizer",
+    "url" : "http://eldrad.cs-i.brandeis.edu:8080/service_manager/invoker/brandeis_eldrad_grid_1:uima.dkpro.stanfordnlp.tokenizer_0.0.1",
+    "requires" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token" ]
+    },
+    "produces" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token" ]
+    }
+  }, {
+    "id" : "brandeis_eldrad_grid_1:uima.dkpro.stanfordnlp.splitter_0.0.1",
+    "name" : "DkPro UIMA Stanford NLP (v0.0.1) Splitter",
+    "url" : "http://eldrad.cs-i.brandeis.edu:8080/service_manager/invoker/brandeis_eldrad_grid_1:uima.dkpro.stanfordnlp.splitter_0.0.1",
+    "requires" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Sentence" ]
+    },
+    "produces" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Sentence" ]
+    }
+  }, {
+    "id" : "brandeis_eldrad_grid_1:uima.dkpro.opennlp.namedentityrecognizer_0.0.1",
+    "name" : "DkPro UIMA OpenNLP (v0.0.1) NamedEntityRecognizer",
+    "url" : "http://eldrad.cs-i.brandeis.edu:8080/service_manager/invoker/brandeis_eldrad_grid_1:uima.dkpro.opennlp.namedentityrecognizer_0.0.1",
+    "requires" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/NamedEntity" ]
+    },
+    "produces" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/NamedEntity" ]
+    }
+  }, {
+    "id" : "brandeis_eldrad_grid_1:uima.dkpro.opennlp.parser_0.0.1",
+    "name" : "DkPro UIMA OpenNLP (v0.0.1) Parser",
+    "url" : "http://eldrad.cs-i.brandeis.edu:8080/service_manager/invoker/brandeis_eldrad_grid_1:uima.dkpro.opennlp.parser_0.0.1",
+    "requires" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/PhraseStructure" ]
+    },
+    "produces" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/PhraseStructure" ]
+    }
+  }, {
+    "id" : "brandeis_eldrad_grid_1:uima.dkpro.opennlp.postagger_0.0.1",
+    "name" : "DkPro UIMA OpenNLP (v0.0.1) POSTagger",
+    "url" : "http://eldrad.cs-i.brandeis.edu:8080/service_manager/invoker/brandeis_eldrad_grid_1:uima.dkpro.opennlp.postagger_0.0.1",
+    "requires" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token#pos" ]
+    },
+    "produces" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token#pos" ]
+    }
+  }, {
+    "id" : "brandeis_eldrad_grid_1:uima.dkpro.opennlp.tokenizer_0.0.1",
+    "name" : "DkPro UIMA OpenNLP (v0.0.1) Tokenizer",
+    "url" : "http://eldrad.cs-i.brandeis.edu:8080/service_manager/invoker/brandeis_eldrad_grid_1:uima.dkpro.opennlp.tokenizer_0.0.1",
+    "requires" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token" ]
+    },
+    "produces" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token" ]
+    }
+  }, {
+    "id" : "brandeis_eldrad_grid_1:uima.dkpro.opennlp.splitter_0.0.1",
+    "name" : "DkPro UIMA OpenNLP (v0.0.1) Splitter",
+    "url" : "http://eldrad.cs-i.brandeis.edu:8080/service_manager/invoker/brandeis_eldrad_grid_1:uima.dkpro.opennlp.splitter_0.0.1",
+    "requires" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Sentence" ]
+    },
+    "produces" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Sentence" ]
+    }
+  }, {
+    "id" : "brandeis_eldrad_grid_1:stanfordnlp.coref_2.0.4",
+    "name" : "Stanford (v2.0.4) NLP Coreference",
+    "url" : "http://eldrad.cs-i.brandeis.edu:8080/service_manager/invoker/brandeis_eldrad_grid_1:stanfordnlp.coref_2.0.4",
+    "requires" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/text", "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ]
+    },
+    "produces" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Coreference", "http://vocab.lappsgrid.org/Token", "http://vocab.lappsgrid.org/Markable" ]
+    }
+  }, {
+    "id" : "brandeis_eldrad_grid_1:stanfordnlp.dependencyparser_2.0.4",
+    "name" : "Stanford (v2.0.4) NLP DependencyParser",
+    "url" : "http://eldrad.cs-i.brandeis.edu:8080/service_manager/invoker/brandeis_eldrad_grid_1:stanfordnlp.dependencyparser_2.0.4",
+    "requires" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/text", "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ]
+    },
+    "produces" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Dependency", "http://vocab.lappsgrid.org/DependencyStructure", "http://vocab.lappsgrid.org/Token" ]
+    }
+  }, {
+    "id" : "brandeis_eldrad_grid_1:stanfordnlp.parser_2.0.4",
+    "name" : "Stanford (v2.0.4) NLP Parser",
+    "url" : "http://eldrad.cs-i.brandeis.edu:8080/service_manager/invoker/brandeis_eldrad_grid_1:stanfordnlp.parser_2.0.4",
+    "requires" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/text", "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ]
+    },
+    "produces" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Constituent", "http://vocab.lappsgrid.org/Token", "http://vocab.lappsgrid.org/PhraseStructure" ]
+    }
+  }, {
+    "id" : "brandeis_eldrad_grid_1:stanfordnlp.splitter_2.0.4",
+    "name" : "Stanford (v2.0.4) NLP Splitter",
+    "url" : "http://eldrad.cs-i.brandeis.edu:8080/service_manager/invoker/brandeis_eldrad_grid_1:stanfordnlp.splitter_2.0.4",
+    "requires" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/text", "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ]
+    },
+    "produces" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Sentence" ]
+    }
+  }, {
+    "id" : "brandeis_eldrad_grid_1:stanfordnlp.namedentityrecognizer_2.0.4",
+    "name" : "Stanford (v2.0.4) NLP NamedEntityRecognizer",
+    "url" : "http://eldrad.cs-i.brandeis.edu:8080/service_manager/invoker/brandeis_eldrad_grid_1:stanfordnlp.namedentityrecognizer_2.0.4",
+    "requires" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/text", "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ]
+    },
+    "produces" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Person", "http://vocab.lappsgrid.org/Location", "http://vocab.lappsgrid.org/Date", "http://vocab.lappsgrid.org/Organization" ]
+    }
+  }, {
+    "id" : "brandeis_eldrad_grid_1:stanfordnlp.tokenizer_2.0.4",
+    "name" : "Stanford (v2.0.4) NLP Tokenizer",
+    "url" : "http://eldrad.cs-i.brandeis.edu:8080/service_manager/invoker/brandeis_eldrad_grid_1:stanfordnlp.tokenizer_2.0.4",
+    "requires" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/text", "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ]
+    },
+    "produces" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token" ]
+    }
+  }, {
+    "id" : "brandeis_eldrad_grid_1:stanfordnlp.postagger_2.0.4",
+    "name" : "Stanford (v2.0.4) NLP POSTagger",
+    "url" : "http://eldrad.cs-i.brandeis.edu:8080/service_manager/invoker/brandeis_eldrad_grid_1:stanfordnlp.postagger_2.0.4",
+    "requires" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/text", "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ]
+    },
+    "produces" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token#pos" ]
+    }
+  }, {
+    "id" : "brandeis_eldrad_grid_1:stanfordnlp.coref_2.0.3",
+    "name" : "Stanford (v2.0.3) NLP Coreference",
+    "url" : "http://eldrad.cs-i.brandeis.edu:8080/service_manager/invoker/brandeis_eldrad_grid_1:stanfordnlp.coref_2.0.3",
+    "requires" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/text", "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ]
+    },
+    "produces" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Coreference", "http://vocab.lappsgrid.org/Token", "http://vocab.lappsgrid.org/Markable" ]
+    }
+  }, {
+    "id" : "brandeis_eldrad_grid_1:stanfordnlp.dependencyparser_2.0.3",
+    "name" : "Stanford (v2.0.3) NLP DependencyParser",
+    "url" : "http://eldrad.cs-i.brandeis.edu:8080/service_manager/invoker/brandeis_eldrad_grid_1:stanfordnlp.dependencyparser_2.0.3",
+    "requires" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/text", "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ]
+    },
+    "produces" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Dependency", "http://vocab.lappsgrid.org/DependencyStructure", "http://vocab.lappsgrid.org/Token" ]
+    }
+  }, {
+    "id" : "brandeis_eldrad_grid_1:stanfordnlp.parser_2.0.3",
+    "name" : "Stanford (v2.0.3) NLP Parser",
+    "url" : "http://eldrad.cs-i.brandeis.edu:8080/service_manager/invoker/brandeis_eldrad_grid_1:stanfordnlp.parser_2.0.3",
+    "requires" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/text", "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ]
+    },
+    "produces" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Constituent", "http://vocab.lappsgrid.org/Token", "http://vocab.lappsgrid.org/PhraseStructure" ]
+    }
+  }, {
+    "id" : "brandeis_eldrad_grid_1:stanfordnlp.splitter_2.0.3",
+    "name" : "Stanford (v2.0.3) NLP Splitter",
+    "url" : "http://eldrad.cs-i.brandeis.edu:8080/service_manager/invoker/brandeis_eldrad_grid_1:stanfordnlp.splitter_2.0.3",
+    "requires" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/text", "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ]
+    },
+    "produces" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Sentence" ]
+    }
+  }, {
+    "id" : "brandeis_eldrad_grid_1:stanfordnlp.namedentityrecognizer_2.0.3",
+    "name" : "Stanford (v2.0.3) NLP NamedEntityRecognizer",
+    "url" : "http://eldrad.cs-i.brandeis.edu:8080/service_manager/invoker/brandeis_eldrad_grid_1:stanfordnlp.namedentityrecognizer_2.0.3",
+    "requires" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/text", "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ]
+    },
+    "produces" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Person", "http://vocab.lappsgrid.org/Location", "http://vocab.lappsgrid.org/Date", "http://vocab.lappsgrid.org/Organization" ]
+    }
+  }, {
+    "id" : "brandeis_eldrad_grid_1:stanfordnlp.tokenizer_2.0.3",
+    "name" : "Stanford (v2.0.3) NLP Tokenizer",
+    "url" : "http://eldrad.cs-i.brandeis.edu:8080/service_manager/invoker/brandeis_eldrad_grid_1:stanfordnlp.tokenizer_2.0.3",
+    "requires" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/text", "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ]
+    },
+    "produces" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token" ]
+    }
+  }, {
+    "id" : "brandeis_eldrad_grid_1:stanfordnlp.postagger_2.0.3",
+    "name" : "Stanford (v2.0.3) NLP POSTagger",
+    "url" : "http://eldrad.cs-i.brandeis.edu:8080/service_manager/invoker/brandeis_eldrad_grid_1:stanfordnlp.postagger_2.0.3",
+    "requires" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/text", "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ]
+    },
+    "produces" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token#pos" ]
+    }
+  }, {
+    "id" : "brandeis_eldrad_grid_1:stanfordnlp.coref_2.0.2",
+    "name" : "Stanford (v2.0.2) NLP Coreference",
+    "url" : "http://eldrad.cs-i.brandeis.edu:8080/service_manager/invoker/brandeis_eldrad_grid_1:stanfordnlp.coref_2.0.2",
+    "requires" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/text", "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ]
+    },
+    "produces" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Coreference", "http://vocab.lappsgrid.org/Token", "http://vocab.lappsgrid.org/Markable" ]
+    }
+  }, {
+    "id" : "brandeis_eldrad_grid_1:stanfordnlp.dependencyparser_2.0.2",
+    "name" : "Stanford (v2.0.2) NLP DependencyParser",
+    "url" : "http://eldrad.cs-i.brandeis.edu:8080/service_manager/invoker/brandeis_eldrad_grid_1:stanfordnlp.dependencyparser_2.0.2",
+    "requires" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/text", "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ]
+    },
+    "produces" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Dependency", "http://vocab.lappsgrid.org/DependencyStructure", "http://vocab.lappsgrid.org/Token" ]
+    }
+  }, {
+    "id" : "brandeis_eldrad_grid_1:stanfordnlp.parser_2.0.2",
+    "name" : "Stanford (v2.0.2) NLP Parser",
+    "url" : "http://eldrad.cs-i.brandeis.edu:8080/service_manager/invoker/brandeis_eldrad_grid_1:stanfordnlp.parser_2.0.2",
+    "requires" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/text", "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ]
+    },
+    "produces" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Constituent", "http://vocab.lappsgrid.org/Token", "http://vocab.lappsgrid.org/PhraseStructure" ]
+    }
+  }, {
+    "id" : "brandeis_eldrad_grid_1:stanfordnlp.splitter_2.0.2",
+    "name" : "Stanford (v2.0.2) NLP Splitter",
+    "url" : "http://eldrad.cs-i.brandeis.edu:8080/service_manager/invoker/brandeis_eldrad_grid_1:stanfordnlp.splitter_2.0.2",
+    "requires" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/text", "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ]
+    },
+    "produces" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Sentence" ]
+    }
+  }, {
+    "id" : "brandeis_eldrad_grid_1:stanfordnlp.namedentityrecognizer_2.0.2",
+    "name" : "Stanford (v2.0.2) NLP NamedEntityRecognizer",
+    "url" : "http://eldrad.cs-i.brandeis.edu:8080/service_manager/invoker/brandeis_eldrad_grid_1:stanfordnlp.namedentityrecognizer_2.0.2",
+    "requires" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/text", "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ]
+    },
+    "produces" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Person", "http://vocab.lappsgrid.org/Location", "http://vocab.lappsgrid.org/Date", "http://vocab.lappsgrid.org/Organization" ]
+    }
+  }, {
+    "id" : "brandeis_eldrad_grid_1:stanfordnlp.tokenizer_2.0.2",
+    "name" : "Stanford (v2.0.2) NLP Tokenizer",
+    "url" : "http://eldrad.cs-i.brandeis.edu:8080/service_manager/invoker/brandeis_eldrad_grid_1:stanfordnlp.tokenizer_2.0.2",
+    "requires" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/text", "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ]
+    },
+    "produces" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token" ]
+    }
+  }, {
+    "id" : "brandeis_eldrad_grid_1:stanfordnlp.postagger_2.0.2",
+    "name" : "Stanford (v2.0.2) NLP POSTagger",
+    "url" : "http://eldrad.cs-i.brandeis.edu:8080/service_manager/invoker/brandeis_eldrad_grid_1:stanfordnlp.postagger_2.0.2",
+    "requires" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/text", "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ]
+    },
+    "produces" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token#pos" ]
+    }
+  }, {
+    "id" : "brandeis_eldrad_grid_1:stanfordnlp.coref_2.0.1",
+    "name" : "Stanford (v2.0.1) NLP Coreference",
+    "url" : "http://eldrad.cs-i.brandeis.edu:8080/service_manager/invoker/brandeis_eldrad_grid_1:stanfordnlp.coref_2.0.1",
+    "requires" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Coreference" ]
+    },
+    "produces" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Coreference" ]
+    }
+  }, {
+    "id" : "brandeis_eldrad_grid_1:stanfordnlp.dependencyparser_2.0.1",
+    "name" : "Stanford (v2.0.1) NLP DependencyParser",
+    "url" : "http://eldrad.cs-i.brandeis.edu:8080/service_manager/invoker/brandeis_eldrad_grid_1:stanfordnlp.dependencyparser_2.0.1",
+    "requires" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/DependencyStructure" ]
+    },
+    "produces" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/DependencyStructure" ]
+    }
+  }, {
+    "id" : "brandeis_eldrad_grid_1:stanfordnlp.parser_2.0.1",
+    "name" : "Stanford (v2.0.1) NLP Parser",
+    "url" : "http://eldrad.cs-i.brandeis.edu:8080/service_manager/invoker/brandeis_eldrad_grid_1:stanfordnlp.parser_2.0.1",
+    "requires" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/PhraseStructure" ]
+    },
+    "produces" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/PhraseStructure" ]
+    }
+  }, {
+    "id" : "brandeis_eldrad_grid_1:stanfordnlp.splitter_2.0.1",
+    "name" : "Stanford (v2.0.1) NLP Splitter",
+    "url" : "http://eldrad.cs-i.brandeis.edu:8080/service_manager/invoker/brandeis_eldrad_grid_1:stanfordnlp.splitter_2.0.1",
+    "requires" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Sentence" ]
+    },
+    "produces" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Sentence" ]
+    }
+  }, {
+    "id" : "brandeis_eldrad_grid_1:stanfordnlp.namedentityrecognizer_2.0.1",
+    "name" : "Stanford (v2.0.1) NLP NamedEntityRecognizer",
+    "url" : "http://eldrad.cs-i.brandeis.edu:8080/service_manager/invoker/brandeis_eldrad_grid_1:stanfordnlp.namedentityrecognizer_2.0.1",
+    "requires" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/NamedEntity" ]
+    },
+    "produces" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/NamedEntity" ]
+    }
+  }, {
+    "id" : "brandeis_eldrad_grid_1:stanfordnlp.tokenizer_2.0.1",
+    "name" : "Stanford (v2.0.1) NLP Tokenizer",
+    "url" : "http://eldrad.cs-i.brandeis.edu:8080/service_manager/invoker/brandeis_eldrad_grid_1:stanfordnlp.tokenizer_2.0.1",
+    "requires" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token" ]
+    },
+    "produces" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token" ]
+    }
+  }, {
+    "id" : "brandeis_eldrad_grid_1:stanfordnlp.postagger_2.0.1",
+    "name" : "Stanford (v2.0.1) NLP POSTagger",
+    "url" : "http://eldrad.cs-i.brandeis.edu:8080/service_manager/invoker/brandeis_eldrad_grid_1:stanfordnlp.postagger_2.0.1",
+    "requires" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token#pos" ]
+    },
+    "produces" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token#pos" ]
+    }
+  }, {
+    "id" : "brandeis_eldrad_grid_1:stanfordnlp.dependencyparser_2.0.0",
+    "name" : "Stanford (v2.0.0) NLP Dependency Parser",
+    "url" : "http://eldrad.cs-i.brandeis.edu:8080/service_manager/invoker/brandeis_eldrad_grid_1:stanfordnlp.dependencyparser_2.0.0",
+    "requires" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/PhraseStructure" ]
+    },
+    "produces" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/PhraseStructure" ]
+    }
+  }, {
+    "id" : "brandeis_eldrad_grid_1:stanfordnlp.parser_2.0.0",
+    "name" : "Stanford (v2.0.0) NLP Parser",
+    "url" : "http://eldrad.cs-i.brandeis.edu:8080/service_manager/invoker/brandeis_eldrad_grid_1:stanfordnlp.parser_2.0.0",
+    "requires" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/PhraseStructure" ]
+    },
+    "produces" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/PhraseStructure" ]
+    }
+  }, {
+    "id" : "brandeis_eldrad_grid_1:stanfordnlp.splitter_2.0.0",
+    "name" : "Stanford (v2.0.0) NLP Splitter",
+    "url" : "http://eldrad.cs-i.brandeis.edu:8080/service_manager/invoker/brandeis_eldrad_grid_1:stanfordnlp.splitter_2.0.0",
+    "requires" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Sentence" ]
+    },
+    "produces" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Sentence" ]
+    }
+  }, {
+    "id" : "brandeis_eldrad_grid_1:stanfordnlp.namedentityrecognizer_2.0.0",
+    "name" : "Stanford (v2.0.0) NLP NamedEntityRecognizer",
+    "url" : "http://eldrad.cs-i.brandeis.edu:8080/service_manager/invoker/brandeis_eldrad_grid_1:stanfordnlp.namedentityrecognizer_2.0.0",
+    "requires" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/NamedEntity" ]
+    },
+    "produces" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/NamedEntity" ]
+    }
+  }, {
+    "id" : "brandeis_eldrad_grid_1:stanfordnlp.tokenizer_2.0.0",
+    "name" : "Stanford (v2.0.0) NLP Tokenizer",
+    "url" : "http://eldrad.cs-i.brandeis.edu:8080/service_manager/invoker/brandeis_eldrad_grid_1:stanfordnlp.tokenizer_2.0.0",
+    "requires" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token" ]
+    },
+    "produces" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token" ]
+    }
+  }, {
+    "id" : "brandeis_eldrad_grid_1:stanfordnlp.postagger_2.0.0",
+    "name" : "Stanford (v2.0.0) NLP POSTagger",
+    "url" : "http://eldrad.cs-i.brandeis.edu:8080/service_manager/invoker/brandeis_eldrad_grid_1:stanfordnlp.postagger_2.0.0",
+    "requires" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token#pos" ]
+    },
+    "produces" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token#pos" ]
+    }
+  }, {
+    "id" : "brandeis_eldrad_grid_1:opennlp.parser_2.0.3",
+    "name" : "OpenNLP (v2.0.3) Parser",
+    "url" : "http://eldrad.cs-i.brandeis.edu:8080/service_manager/invoker/brandeis_eldrad_grid_1:opennlp.parser_2.0.3",
+    "requires" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Sentence" ]
+    },
+    "produces" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Constituent", "http://vocab.lappsgrid.org/PhraseStructure" ]
+    }
+  }, {
+    "id" : "brandeis_eldrad_grid_1:opennlp.splitter_2.0.3",
+    "name" : "OpenNLP (v2.0.3) Splitter",
+    "url" : "http://eldrad.cs-i.brandeis.edu:8080/service_manager/invoker/brandeis_eldrad_grid_1:opennlp.splitter_2.0.3",
+    "requires" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ]
+    },
+    "produces" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Sentence" ]
+    }
+  }, {
+    "id" : "brandeis_eldrad_grid_1:opennlp.namedentityrecognizer_2.0.3",
+    "name" : "OpenNLP (v2.0.3) NamedEntityRecognizer",
+    "url" : "http://eldrad.cs-i.brandeis.edu:8080/service_manager/invoker/brandeis_eldrad_grid_1:opennlp.namedentityrecognizer_2.0.3",
+    "requires" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token" ]
+    },
+    "produces" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/NamedEntity" ]
+    }
+  }, {
+    "id" : "brandeis_eldrad_grid_1:opennlp.tokenizer_2.0.3",
+    "name" : "OpenNLP (v2.0.3) Tokenizer",
+    "url" : "http://eldrad.cs-i.brandeis.edu:8080/service_manager/invoker/brandeis_eldrad_grid_1:opennlp.tokenizer_2.0.3",
+    "requires" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ]
+    },
+    "produces" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token" ]
+    }
+  }, {
+    "id" : "brandeis_eldrad_grid_1:opennlp.postagger_2.0.3",
+    "name" : "OpenNLP (v2.0.3) POSTagger",
+    "url" : "http://eldrad.cs-i.brandeis.edu:8080/service_manager/invoker/brandeis_eldrad_grid_1:opennlp.postagger_2.0.3",
+    "requires" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token" ]
+    },
+    "produces" : {
+      "encoding" : "UTF-8",
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token#pos" ]
+    }
+  }, {
+    "id" : "brandeis_eldrad_grid_1:opennlp.parser_2.0.2",
+    "name" : "OpenNLP (v2.0.2) Parser",
+    "url" : "http://eldrad.cs-i.brandeis.edu:8080/service_manager/invoker/brandeis_eldrad_grid_1:opennlp.parser_2.0.2",
+    "requires" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/PhraseStructure" ]
+    },
+    "produces" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/PhraseStructure" ]
+    }
+  }, {
+    "id" : "brandeis_eldrad_grid_1:opennlp.splitter_2.0.2",
+    "name" : "OpenNLP (v2.0.2) Splitter",
+    "url" : "http://eldrad.cs-i.brandeis.edu:8080/service_manager/invoker/brandeis_eldrad_grid_1:opennlp.splitter_2.0.2",
+    "requires" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Sentence" ]
+    },
+    "produces" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Sentence" ]
+    }
+  }, {
+    "id" : "brandeis_eldrad_grid_1:opennlp.namedentityrecognizer_2.0.2",
+    "name" : "OpenNLP (v2.0.2) NamedEntityRecognizer",
+    "url" : "http://eldrad.cs-i.brandeis.edu:8080/service_manager/invoker/brandeis_eldrad_grid_1:opennlp.namedentityrecognizer_2.0.2",
+    "requires" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/NamedEntity" ]
+    },
+    "produces" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/NamedEntity" ]
+    }
+  }, {
+    "id" : "brandeis_eldrad_grid_1:opennlp.tokenizer_2.0.2",
+    "name" : "OpenNLP (v2.0.2) Tokenizer",
+    "url" : "http://eldrad.cs-i.brandeis.edu:8080/service_manager/invoker/brandeis_eldrad_grid_1:opennlp.tokenizer_2.0.2",
+    "requires" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token" ]
+    },
+    "produces" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token" ]
+    }
+  }, {
+    "id" : "brandeis_eldrad_grid_1:opennlp.postagger_2.0.2",
+    "name" : "OpenNLP (v2.0.2) POSTagger",
+    "url" : "http://eldrad.cs-i.brandeis.edu:8080/service_manager/invoker/brandeis_eldrad_grid_1:opennlp.postagger_2.0.2",
+    "requires" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token#pos" ]
+    },
+    "produces" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token#pos" ]
+    }
+  }, {
+    "id" : "brandeis_eldrad_grid_1:opennlp.coref_2.0.1",
+    "name" : "OpenNLP (v2.0.1) Coreference",
+    "url" : "http://eldrad.cs-i.brandeis.edu:8080/service_manager/invoker/brandeis_eldrad_grid_1:opennlp.coref_2.0.1",
+    "requires" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Coreference" ]
+    },
+    "produces" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Coreference" ]
+    }
+  }, {
+    "id" : "brandeis_eldrad_grid_1:opennlp.parser_2.0.1",
+    "name" : "OpenNLP (v2.0.1) Parser",
+    "url" : "http://eldrad.cs-i.brandeis.edu:8080/service_manager/invoker/brandeis_eldrad_grid_1:opennlp.parser_2.0.1",
+    "requires" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/PhraseStructure" ]
+    },
+    "produces" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/PhraseStructure" ]
+    }
+  }, {
+    "id" : "brandeis_eldrad_grid_1:opennlp.splitter_2.0.1",
+    "name" : "OpenNLP (v2.0.1) Splitter",
+    "url" : "http://eldrad.cs-i.brandeis.edu:8080/service_manager/invoker/brandeis_eldrad_grid_1:opennlp.splitter_2.0.1",
+    "requires" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Sentence" ]
+    },
+    "produces" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Sentence" ]
+    }
+  }, {
+    "id" : "brandeis_eldrad_grid_1:opennlp.namedentityrecognizer_2.0.1",
+    "name" : "OpenNLP (v2.0.1) NamedEntityRecognizer",
+    "url" : "http://eldrad.cs-i.brandeis.edu:8080/service_manager/invoker/brandeis_eldrad_grid_1:opennlp.namedentityrecognizer_2.0.1",
+    "requires" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/NamedEntity" ]
+    },
+    "produces" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/NamedEntity" ]
+    }
+  }, {
+    "id" : "brandeis_eldrad_grid_1:opennlp.tokenizer_2.0.1",
+    "name" : "OpenNLP (v2.0.1) Tokenizer",
+    "url" : "http://eldrad.cs-i.brandeis.edu:8080/service_manager/invoker/brandeis_eldrad_grid_1:opennlp.tokenizer_2.0.1",
+    "requires" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token" ]
+    },
+    "produces" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token" ]
+    }
+  }, {
+    "id" : "brandeis_eldrad_grid_1:opennlp.postagger_2.0.1",
+    "name" : "OpenNLP (v2.0.1) POSTagger",
+    "url" : "http://eldrad.cs-i.brandeis.edu:8080/service_manager/invoker/brandeis_eldrad_grid_1:opennlp.postagger_2.0.1",
+    "requires" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token#pos" ]
+    },
+    "produces" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token#pos" ]
+    }
+  }, {
+    "id" : "brandeis_eldrad_grid_1:opennlp.parser_2.0.0",
+    "name" : "OpenNLP (v2.0.0) Parser",
+    "url" : "http://eldrad.cs-i.brandeis.edu:8080/service_manager/invoker/brandeis_eldrad_grid_1:opennlp.parser_2.0.0",
+    "requires" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/PhraseStructure" ]
+    },
+    "produces" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/PhraseStructure" ]
+    }
+  }, {
+    "id" : "brandeis_eldrad_grid_1:opennlp.splitter_2.0.0",
+    "name" : "OpenNLP (v2.0.0) Splitter",
+    "url" : "http://eldrad.cs-i.brandeis.edu:8080/service_manager/invoker/brandeis_eldrad_grid_1:opennlp.splitter_2.0.0",
+    "requires" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Sentence" ]
+    },
+    "produces" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Sentence" ]
+    }
+  }, {
+    "id" : "brandeis_eldrad_grid_1:opennlp.namedentityrecognizer_2.0.0",
+    "name" : "OpenNLP (v2.0.0) NamedEntityRecognizer",
+    "url" : "http://eldrad.cs-i.brandeis.edu:8080/service_manager/invoker/brandeis_eldrad_grid_1:opennlp.namedentityrecognizer_2.0.0",
+    "requires" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/NamedEntity" ]
+    },
+    "produces" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/NamedEntity" ]
+    }
+  }, {
+    "id" : "brandeis_eldrad_grid_1:opennlp.tokenizer_2.0.0",
+    "name" : "OpenNLP (v2.0.0) Tokenizer",
+    "url" : "http://eldrad.cs-i.brandeis.edu:8080/service_manager/invoker/brandeis_eldrad_grid_1:opennlp.tokenizer_2.0.0",
+    "requires" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token" ]
+    },
+    "produces" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token" ]
+    }
+  }, {
+    "id" : "brandeis_eldrad_grid_1:opennlp.postagger_2.0.0",
+    "name" : "OpenNLP (v2.0.0) POSTagger",
+    "url" : "http://eldrad.cs-i.brandeis.edu:8080/service_manager/invoker/brandeis_eldrad_grid_1:opennlp.postagger_2.0.0",
+    "requires" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token#pos" ]
+    },
+    "produces" : {
+      "language" : [ "en" ],
+      "format" : [ "http://vocab.lappsgrid.org/ns/media/jsonld#lif" ],
+      "annotations" : [ "http://vocab.lappsgrid.org/Token#pos" ]
+    }
+  } ]
+}

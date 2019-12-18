@@ -1,0 +1,10 @@
+{
+    "services": [
+        "gate.tokenizer",
+        "gate.splitter",
+        "gate.tagger",
+        "gate2lif"
+    ],
+    "type": "text/plain",
+    "payload": "Hello worlds"
+}

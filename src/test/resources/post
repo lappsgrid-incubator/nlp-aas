@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+curl -i -H 'content-type: application/json' -d @$1 http://localhost:8080/submit
+#echo $r
+#echo $r | grep Location | cut -d/ -f3 | pbcopy
+#pbpaste
+
