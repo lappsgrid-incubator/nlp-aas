@@ -70,7 +70,7 @@ class JobController {
                 }
                 manager.jobs().each { job ->
                     tr {
-                        td { a href:'/job/'+job.id, job.id }
+                        td { a href:'/nlpaas/job/'+job.id, job.id }
                         td job.submittedAt
                         td job.status
                     }

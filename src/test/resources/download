@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
 
-curl http://localhost:8080/download/$1 | jsonpp
+#SERVER=http://129.114.17.83:8082
+SERVER=https://api.lappsgrid.org/nlpaas
+curl $SERVER/download/$1 | jsonpp

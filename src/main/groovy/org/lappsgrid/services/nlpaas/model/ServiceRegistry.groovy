@@ -112,7 +112,7 @@ class ServiceRegistry implements Iterable<LappsgridService> {
             gate(type)
         }
         addShortcut("opennlp.ner.pipeline", "anc:opennlp.cloud.ner_pipeline_1.0.0")
-        addShortcut("stanford.nep.pipeline", "anc:stanford.cloud.ner_1.0.0")
+        addShortcut("stanford.ner.pipeline", "anc:stanford.cloud.ner_1.0.0")
         addShortcut("lif2gate", "anc:convert.json2gate_2.0.0")
         addShortcut("gate2lif", "anc:convert.gate2json_2.0.0")
     }

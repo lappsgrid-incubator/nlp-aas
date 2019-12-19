@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController
  *
  */
 @Slf4j("logger")
-@RestController
+//@RestController
 class ResourceController {
 
 

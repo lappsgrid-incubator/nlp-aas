@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 
-curl -i -H 'content-type: application/json' -d @$1 http://localhost:8080/validate
+SERVER=https://api.lappsgrid.org/nlpaas
+curl -i -H 'content-type: application/json' -d @$1 $SERVER/validate

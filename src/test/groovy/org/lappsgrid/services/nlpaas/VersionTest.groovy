@@ -32,6 +32,9 @@ class VersionTest {
     void testEqual() {
         eq('1.0.0', '1.0.0')
         eq('2.2.2-RC-2', '2.2.2-RC-2')
+        assert new Version("1.0.0").equals(new Version("1.0.0"))
+        assert !new Version("1.0.1").equals(new Version("1.0.0"))
+        assert new Version("1.0.0") != new Version("1.0.1")
     }
 
     void lt(String v1, String v2) {

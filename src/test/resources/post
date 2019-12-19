@@ -1,6 +1,10 @@
 #!/usr/bin/env bash
 
-curl -i -H 'content-type: application/json' -d @$1 http://localhost:8080/submit
+#SERVER=http://129.114.17.83:8082
+SERVER=https://api.lappsgrid.org/nlpaas
+
+#curl -i -H 'content-type: application/json' -d @$1 http://localhost:8080/submit
+curl -i -H 'content-type: application/json' -d @$1 $SERVER/submit
 #echo $r
 #echo $r | grep Location | cut -d/ -f3 | pbcopy
 #pbpaste
