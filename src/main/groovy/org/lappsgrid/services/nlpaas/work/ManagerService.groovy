@@ -158,7 +158,7 @@ class ManagerService implements StatsProvider {
         }
         description.finishedAt = Time.now()
         description.status = Status.DONE
-        description.resultUrl = '/download/' + order.id
+        description.resultUrl = '/nlpaas/download/' + order.id
         return true
     }
 

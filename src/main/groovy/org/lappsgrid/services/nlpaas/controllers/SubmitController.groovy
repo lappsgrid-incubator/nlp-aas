@@ -79,7 +79,7 @@ class SubmitController {
         order.id = UUID.randomUUID().toString()
         manager.submit(order)
         return ResponseEntity.status(HttpStatus.CREATED)
-                .header('Location', '/job/' + order.id)
+                .header('Location', '/nlpaas/job/' + order.id)
                 .build()
     }
 }
