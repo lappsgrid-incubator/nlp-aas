@@ -10,18 +10,26 @@
 			<pattern>%date %-5level [%class{0}.%M:%line] %msg%n</pattern>
 		</encoder>
 	</appender>
-	<appender name="FILE" class="ch.qos.logback.core.FileAppender">
+	<!--
+	<appender name="ROLLING" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>/var/log/nlpaas/access.log</file>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>/var/log/nlpaas/access-%d{yyyy-MM}.log</fileNamePattern>
+			<timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+				<maxFileSize>10M</maxFileSize>
+			</timeBasedFileNamingAndTriggeringPolicy>
+		</rollingPolicy>
 		<encoder>
 			<pattern>%date %-5level [%class{0}.%M:%line] %msg%n</pattern>
 		</encoder>
-		<append>true</append>
-		<file>change-me.log</file>
 	</appender>
-
-	<logger name="org.anc" level="info"/>
-
+	-->
+	<logger name="org.lappsgrid" level="debug"/>
+	<logger name="org.lappsgrid.services.nlpaas" level="trace"/>
+	<logger name="groovy.net.http" level="debug"/>
+	<logger name="org.springframework" level="info"/>
+	<logger name="org.springframework.web" level="debug"/>
 	<root level="info">
 		<appender-ref ref="STDOUT" />
-		<!-- <appender-ref ref="FILE"/>  -->
 	</root>
 </configuration>

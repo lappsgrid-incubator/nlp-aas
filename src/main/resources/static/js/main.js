@@ -2,7 +2,7 @@
 function delete_job(id) {
     console.log("Sending DELETE for " + id);
     $.ajax({
-        url: '/job/' + id,
+        url: '/nlpaas/job/' + id,
         type: 'DELETE'
     }).done(function() {
             console.log("Done callback.")

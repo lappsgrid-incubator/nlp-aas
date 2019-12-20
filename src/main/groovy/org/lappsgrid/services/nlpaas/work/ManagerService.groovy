@@ -24,6 +24,7 @@ class ManagerService implements StatsProvider {
     static final String STATS_KILLED = 'manager.killed'
     static final String STATS_JOBS = 'manager.jobs'
     static final String STATS_WORKERS = 'manager.workers'
+    static final String STATS_COUNT = "manager.count"
 
     @Value("reaper.manager.delay")
     private static final int REAPER_DELAY_MINUTES
@@ -38,6 +39,7 @@ class ManagerService implements StatsProvider {
     private Map<String,JobDescription> index
     private Map<String,Worker> workers
     private long killed
+    private long count
 
     ManagerService() {
         index = new HashMap<>()
@@ -45,6 +47,7 @@ class ManagerService implements StatsProvider {
         reaper = (ScheduledExecutorService) Executors.newScheduledThreadPool(1);
         reaper.scheduleAtFixedRate(new Reaper(), 1, 1, TimeUnit.MINUTES)
         killed = 0
+        count = 0
     }
 
     Set<String> list() {

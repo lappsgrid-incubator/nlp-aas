@@ -15,9 +15,9 @@ class HTML {
 html {
     head {
         title _.title
-        link rel:'stylesheet', href:'/style/main.css\'   
-        script src:'/js/jquery.js', ''
-        script src:'/js/main.js', '' 
+        link rel:'stylesheet', href:'/nlpaas/style/main.css\'   
+        script src:'/nlpaas/js/jquery.js', ''
+        script src:'/nlpaas/js/main.js', '' 
     }
     body {
         div(class:'header') {

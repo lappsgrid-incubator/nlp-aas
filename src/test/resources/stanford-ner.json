@@ -1,5 +1,5 @@
 {
-  "services" : [ "stanford.nep.pipeline" ],
+  "services" : [ "stanford.ner.pipeline" ],
   "type" : "application/json",
   "payload" : {
     "discriminator" : "http://vocab.lappsgrid.org/ns/media/jsonld#lif",

@@ -80,7 +80,7 @@ class HtmlTest {
         GPathResult page = parse(html)
         assert title == page.head.title.text()
         assert 'stylesheet' == page.head.link.@rel.text()
-        assert '/style/main.css' == page.head.link.@href.text()
+        assert '/nlpaas/style/main.css' == page.head.link.@href.text()
         GPathResult copy = page.body.p[-1]
         assert 2 == page.body.div.size()
         assert null != copy

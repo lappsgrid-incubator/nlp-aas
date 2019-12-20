@@ -57,14 +57,14 @@ class SubmitControllerTest {
                 .andExpect(status().is(201))
                 .andExpect(header().exists('Location'))
                 .andDo( { MvcResult result -> url = result.response.getHeader('Location')})
-        assert url.startsWith('/job/')
-        String sid = url.replace('/job/', '')
+        assert url.startsWith('/nlpaas/job/')
+        String sid = url.replace('/nlpaas/job/', '')
         JobDescription description = new JobDescription()
         description.id = sid
         description.status = Status.IN_PROGRESS
         description.submittedAt = ZonedDateTime.now()
         Mockito.when(managerService.get(sid)).thenReturn(description)
-        mvc.perform(get(url))
+        mvc.perform(get('/job/'+sid))
                 .andExpect(status().isOk())
                 .andDo(print())
     }
@@ -77,14 +77,14 @@ class SubmitControllerTest {
                 .andExpect(status().is(201))
                 .andExpect(header().exists('Location'))
                 .andDo( { MvcResult result -> url = result.response.getHeader('Location')})
-        assert url.startsWith('/job/')
-        String sid = url.replace('/job/', '')
+        assert url.startsWith('/nlpaas/job/')
+        String sid = url.replace('/nlpaas/job/', '')
         JobDescription description = new JobDescription()
         description.id = sid
         description.status = Status.IN_PROGRESS
         description.submittedAt = ZonedDateTime.now()
         Mockito.when(managerService.get(sid)).thenReturn(description)
-        mvc.perform(get(url))
+        mvc.perform(get('/job/'+sid))
                 .andExpect(status().isOk())
                 .andDo(print())
     }

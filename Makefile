@@ -33,4 +33,6 @@ push:
 	docker tag $(IMAGE) $(TAG)
 	docker push $(TAG)
 
+update:
+	curl -i http://129.114.17.83:9000/api/webhooks/9e3e277e-3cab-4d25-a1f4-65adf17a8477
 	
