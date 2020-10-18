@@ -165,10 +165,33 @@ There are no pre-configured GATE or Lingpipe NER pipelines at this time.
 
 ## Finding Services
 
-To find the available services that are capable of producing a given annotation type send a *GET* request to `https://api.lappsgrid.org/nlpaas/producers?type={type}`
+To find the available services that are capable of producing a given annotation type send a *GET* request to `https://api.lappsgrid.org/nlpaas/producers?type={type}` where `type` is the name of the annotation type without the `http://vocab.lappsgrid.org/` prefix. The `type` name is case insensitive.  
 
 ``` 
-$ curl -i http://api.lappsgrid.org/nlpaas/producers?type=token%23lemma
+$ curl -i https://api.lappsgrid.org/nlpaas/producers?type=nounchunk
+HTTP/1.1 200 
+Server: nginx/1.12.2
+Date: Sun, 29 Dec 2019 22:49:20 GMT
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Strict-Transport-Security: max-age=31536000; includeSubdomains; always
+
+{
+    "status": 200,
+    "producers": [
+        "anc:gate.npchunker_2.3.0",
+        "anc:gate.npchunker_2.2.0",
+        "anc:gate.npchunker_2.1.0",
+        "anc:gate.npchunker_2.0.0"
+    ]
+}
+```
+
+The `type` name **must** be URL encoded if it contains a *#* symbol; for example to search for services that produce `Token#pos` or `Token#lemma`
+
+``` 
+$ curl -i https://api.lappsgrid.org/nlpaas/producers?type=token%23lemma
 HTTP/1.1 200 
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
@@ -190,7 +213,7 @@ Date: Tue, 17 Dec 2019 00:55:26 GMT
 
 ## Finding Information About Services
 
-Each service in the LAPPS Grid returns metadata about the input formats in accepts, the annotations it produces, the annotations it requires in its input, licensing terms, and much more.  To obtain metadata about a service use the `/metadata?id={id}` end point.
+Each service in the LAPPS Grid returns metadata about the input formats in accepts, the annotations it produces, the annotations it requires in its input, licensing terms, and much more.  To obtain metadata about a service use the `/metadata?id={id}` end point. The full service ID or service short-cut can be used.
 
 ```
 $ curl -i https://api.lappsgrid.org/nlpaas/metadata?id=opennlp.ner
@@ -202,7 +225,7 @@ Date: Tue, 17 Dec 2019 00:59:35 GMT
 {
   "discriminator" : "http://vocab.lappsgrid.org/ns/meta",
   "payload" : {
-    "$schema" : "https://vocab.lappsgrid.org/schema/1.1.0/metadata-schema.json",
+    "$schema" : "http://vocab.lappsgrid.org/schema/1.1.0/metadata-schema.json",
     "name" : "org.lappsgrid.cloud.opennlp.soap.NamedEntityRecognizer:1.0.0-SNAPSHOT",
     "version" : "1.0.0-SNAPSHOT",
     "toolVersion" : "1.9.1",
